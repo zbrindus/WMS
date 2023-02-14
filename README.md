@@ -9,7 +9,7 @@ Ca sa functioneze programul:
 		C:\Program Files\poppler-22.04.0\Library\bin
 		C:\Program Files\Tesseract-OCR\
 	
-	Programele Tesseract si Poppler, sunt in folderul "Requirements". Sa le copiezi de acolo in C:\Program Files.
+	Programele Tesseract si Poppler, sunt in folderul "Requirements" pe OneDrive. Sa le copiezi de acolo in C:\Program Files.
 
 ######################
 Daca sunt probleme la scanare sau daca vrei sa adaugi o firma:
@@ -22,6 +22,6 @@ Daca vrei sa editezi programul:
 
 ######################
 Daca la pornirea programului apare mesajul:
-	1. VCRUMTIME140.DLL is missing, trebuie instalat vc_redist.x64.exe din folderul Requirements\VCRedist.
-	2. Could not find module "libzbar-64.dll", trebuie instalat vcredist_x64.exe din folderul Requirements\VCRedist.
+	1. VCRUMTIME140.DLL is missing, trebuie instalat vc_redist.x64.exe din folderul de pe OneDrive Requirements\VCRedist.
+	2. Could not find module "libzbar-64.dll", trebuie instalat vcredist_x64.exe din folderul de pe OneDrive Requirements\VCRedist.
 	
