@@ -146,11 +146,11 @@ def my_open():
     b6.place(x=113, y=105)
 
     b7 = Button(child, text='Lipire\ndocumente', height=3, width=9, command=merge)
-    b7.place(x=65, y=170)
+    b7.place(x=68, y=170)
 
     b8 = Button(child, text='Iesire', command=master.destroy)
-    b8.place(x=145, y=170) 
+    b8.place(x=145, y=200) 
 
     b9 = Button(child, text='Inapoi', command=child.destroy)
-    b9.place(x=20, y=170)
+    b9.place(x=20, y=200)
 master.mainloop()
