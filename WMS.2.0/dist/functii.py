@@ -14,12 +14,11 @@ from natsort import natsorted
 from operator import itemgetter
 from pdf2image import convert_from_path, convert_from_bytes
 from PyPDF2 import PdfFileWriter, PdfReader, PdfFileMerger
+from PIL import ImageFilter
 from pyzbar.pyzbar import decode
 from time import sleep
 from tkinter.simpledialog import askstring
 from tkinter.messagebox import showinfo
-# from tkinter import *
-# from tkinter import messagebox
 
 ######################################## DIRECTORUL DE LUCRU ##############################################
 
@@ -149,7 +148,7 @@ def redenumire(elem, new_dict, img_to_ocr):
                 final_doc_name = inv_name + str(number[0]) + '.pdf'
         except IndexError:
             # final_doc_name = 'error'
-            final_doc_name = inv_name + '_AVIZ_0'
+            final_doc_name = inv_name + 'AVIZ_0'
         return final_doc_name
 
 
@@ -188,7 +187,7 @@ def redenumire_main():
                     # Redenumim pdf-urile unul câte unul.
                     nume_final = redenumire(nume, date, img_file)
                     try:
-                        if '_AVIZ_0' in nume_final:
+                        if 'AVIZ_0' in nume_final:
                             nume_aviz = nume_final + str(count) + ".pdf"
                             os.rename(path, nume_aviz)
                         else:
@@ -210,13 +209,13 @@ def redenumire_main():
 def extern_main(name):
 
     if name == "DELL":
-        box = (0, 550, 1800, 700)
+        box = (0, 0, 1900, 970)
         psm = r'--psm 6'
         searchTerm = 'Customer No'
     
     if name == "HP":
-        box = (500, 700, 1300, 900)
-        psm = r'--psm 3'
+        box = (0, 0, 1900, 970)
+        psm = r'--psm 6'
         searchTerm = '90'
         
     pdf_files = [pdfFile for pdfFile in os.listdir(rootDir()) if pdfFile.endswith('.pdf')]
@@ -228,7 +227,9 @@ def extern_main(name):
         with tempfile.NamedTemporaryFile(mode='wb'):
             images_from_path = convert_from_path(path)
             # Decupăm porțiunea de sus a facturii unde pot fi numele furnizorului și nr. de factură.
-            img_file = images_from_path[0].crop(box)
+            cropped_img_file = images_from_path[0].crop(box)
+            img_file = cropped_img_file.filter(ImageFilter.MedianFilter)
+            img_file.point( lambda p: 255 if p > 123 else 0 )
             # Transformăm imaginea în text.
             conf = r" --oem 3 -c tessedit_char_whitelist=('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ')"
             ocr_config = psm + conf
