@@ -45,7 +45,7 @@
   	  "Split": "Nr ",
   	  "Docnumber": "[0][1]",
   	  "Docname": "AGIS_",
-  	  "Cropbox": "(600, 50, 1100, 400)"
+  	  "Cropbox": "(750, 50, 1100, 420)"
     }
   ],
   
@@ -79,6 +79,16 @@
     }
   ],
 
+  "ALLIS": [
+    {
+      "Line": "Nr facturii",
+      "Split": "facturii ",
+      "Docnumber": "[0][1]",
+      "Docname": "ALLIS_",
+      "Cropbox": "(350, 350, 1100, 620)"
+    }
+  ],
+
   "ALSO TECHNOLOGY": [
     {
       "Line": "Numar",
@@ -91,8 +101,8 @@
 
   "APCOM IT DISTRIBUTION": [
     {
-      "Line": "Timisoara",
-      "Split": "Timisoara ",
+      "Line": "Ghiroda",
+      "Split": "Ghiroda ",
       "Docnumber": "[0][1]",
       "Docname": "APCOM_",
       "Cropbox": "(1050, 650, 1700, 900)"
@@ -151,11 +161,11 @@
   
   "DANTE INTERNATIONAL": [
     {
-      "Line": "23",
+      "Line": "24",
       "Split": " ",
       "Docnumber": "[0][0]",
       "Docname": "DANTE_",
-      "Cropbox": "(1150, 50, 1800, 200)"
+      "Cropbox": "(1150, 50, 1800, 500)"
     }
   ],
   
@@ -182,7 +192,7 @@
   "CUSTOMER NO 21526": [
     {
       "Line": "Invoice No",
-      "Split": "VK23RG",
+      "Split": "VK24RG",
       "Docnumber": "[0][1]",
       "Docname": "EAF_",
       "Cropbox": "(0, 50, 1800, 770)"
@@ -214,7 +224,7 @@
       "Line": "LKR",
       "Split": "LKR",
       "Docnumber": "[0][1]",
-      "Docname": "ELKO_",
+      "Docname": "ELKOTECH_",
       "Cropbox": "(50, 100, 1050, 900)"
     }
   ],
@@ -295,7 +305,7 @@
       "Split": "CON",
       "Docnumber": "[0][1]",
       "Docname": "IMPACT_",
-      "Cropbox": "(1000, 0, 1700, 100)"
+      "Cropbox": "(0, 0, 1700, 470)"
     }
   ],
 
@@ -419,12 +429,12 @@
     }
   ],
 
-  "NETSAFE": [
+  "INFINIGATE": [
     {
       "Line": "NSS",
       "Split": "NSS ",
       "Docnumber": "[0][1]",
-      "Docname": "NETSAFE_",
+      "Docname": "INFINIGATE_",
       "Cropbox": "(0, 50, 1800, 770)"
     }
   ],
@@ -469,6 +479,16 @@
     }
   ],
   
+    "OMNIENT": [
+    {
+      "Line": "Numar",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "OMNIENT_",
+      "Cropbox": "(650, 50, 1100, 420)"
+    }
+  ],
+  
   "ORACLE": [
     {
       "Line": "68",
@@ -479,12 +499,22 @@
     }
   ],
   
+    "PROMELEK": [
+    {
+      "Line": "FACTURA",
+      "Split": "NR ",
+      "Docnumber": "[0][1]",
+      "Docname": "PROMELEK_",
+      "Cropbox": "(0, 0, 1700, 470)"
+    }
+  ],
+  
   "ROMSYM DATA": [
     {
       "Line": "RSD",
       "Split": "Nr ",
       "Docnumber": "[0][1]",
-      "Docname": "ROMSYM_",
+      "Docname": "ROMSYMDATA_",
       "Cropbox": "(0, 50, 1800, 770)"
     }
   ],
@@ -515,7 +545,7 @@
       "Split": "Royal ",
       "Docnumber": "[0][1]",
       "Docname": "ROYAL_",
-      "Cropbox": "(1000, 0, 1700, 200)"
+      "Cropbox": "(1000, 0, 1700, 300)"
     }
   ],
   
@@ -525,7 +555,7 @@
       "Split": "Royal ",
       "Docnumber": "[0][1]",
       "Docname": "ROYAL_",
-      "Cropbox": "(1000, 0, 1700, 200)"
+      "Cropbox": "(1000, 0, 1700, 300)"
     }
   ],
 
@@ -626,6 +656,17 @@
       "Cropbox": "(0, 50, 1800, 970)"
     }
   ],
+  
+    "RO25222010": [
+    {
+      "Line": "Seria",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "TME_",
+      "Cropbox": "(0, 850, 800, 970)"
+    }
+  ],
+  
   "9046534": [
     {
       "Line": "9046534",
