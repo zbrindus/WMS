@@ -7,6 +7,7 @@ import os
 import PIL.Image
 import PyPDF2
 import pytesseract
+import re
 import shutil
 import sys
 import tempfile
@@ -202,7 +203,7 @@ def redenumire_main():
         if file.endswith('.pdf'):
             # shutil.move(file, rootDir() + '\\' + 'De_trimis')
             shutil.move(file, rootDir())
-    
+
 ##################################### REDENUMIRE FACTURI DELL SI HP ###########################################
 
 
@@ -211,17 +212,21 @@ def extern_main(name):
     if name == "DELL":
         box = (0, 0, 1900, 970)
         psm = r'--psm 6'
-        searchTerm = 'Customer No'
+        invoice_no = r"Invoice No\s*(\d*)"
+        order_no = r"Order No\s*(\d*)"
     
     if name == "HP":
         box = (0, 0, 1900, 970)
         psm = r'--psm 6'
         searchTerm = '90'
-        
+
+    count = 0
+    lstLine = []
     pdf_files = [pdfFile for pdfFile in os.listdir(rootDir()) if pdfFile.endswith('.pdf')]
     # Deschidem unul câte unul fiecare document .pdf din listă și extragem prima pagină.
     for i in range(len(pdf_files)):
-        count = i
+        count += 1
+        rename = "DELL_" + str(count)
         path = rootDir() + '\\' + pdf_files[i]
         # print("Renaming " + pdf_files[i])
         with tempfile.NamedTemporaryFile(mode='wb'):
@@ -234,26 +239,28 @@ def extern_main(name):
             conf = r" --oem 3 -c tessedit_char_whitelist=('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ')"
             ocr_config = psm + conf
             text = pytesseract.image_to_string(img_file, config=ocr_config)
-            # Salvam textul extras din imagine in fisierul text 'str.txt'.
-            with open('str.txt', 'a') as text_file:
-                text_file.write('##########\n' + text)
-                text_file.close()
-
-    with open('str.txt', 'r') as f:
-        linie = [line for line in f if searchTerm in line]
-    # Si le scriem intr-un fisier nou dupa care stergem primul fisier.
-    with open('nume.txt', 'w') as f:
-        for item in linie:
-            f.write("%s" % item)
-    # Liniile de mai jos sunt pentru cazul in care s-a scanat gresit si au aparut hieroglife in loc de cifre. 
-    removetable = str.maketrans('','','|')
-    out_list = [s.translate(removetable) for s in open('nume.txt')]
-    # Asamblam numele final al documentului si facem o lista care contine aceste nume.
-    docName = [line.split() for line in out_list]
-    with open('numeFinal.txt', 'w') as finalName:
-        for item in range(len(docName)):
+            
             if name == "DELL":
-                finalName.write('DELL_' + docName[item][2] + '_' + docName[item][9] + '.pdf\n')
+                Invoice = re.findall(invoice_no, str(text))
+                Order = re.findall(order_no, str(text))
+
+                invoice_No = [invoice for invoice in Invoice]
+                order_No = [order for order in Order]
+
+                for invoice in invoice_No:
+                    for order in order_No:
+                        searchterm = "DELL_" + str(invoice) + "_" + str(order)
+
+                # Salvam textul extras din imagine in fisierul text 'str.txt'.
+                if len(invoice_No) == 0:
+                    lstLine.append(rename)
+                else:
+                    lstLine.append(searchterm)
+
+    with open('numeFinal.txt', 'w') as finalName:
+        for nr, item in enumerate(lstLine):
+            if name == "DELL":
+                finalName.write(item + '.pdf\n')
             if name == "HP":
                 finalName.write('HP_' + docName[item][0] + '.pdf\n')
     # Stergem fisierul _pdf_file.pdf. Daca nu il stergem acum, atunci va fi primul fisier pdf redenumit si ne da peste cap tot programul. 
@@ -274,15 +281,15 @@ def extern_main(name):
                         # shutil.move(file, rootDir() + '\\De_trimis')
                         shutil.move(file, rootDir())
                 pdfCount += 1
-    
+
     # Alegem directorul in care lucram.
     d = rootDir() + "\\dist"
     # Stergem fisierul numeFinal.txt.
     os.remove('numeFinal.txt')
     # Stergem fisierul nume.txt.
-    os.remove('nume.txt')
+    # os.remove('nume.txt')
     # Stergem fisierul str.txt.
-    os.remove('str.txt')
+    # os.remove('str.txt')
     # Stergem imaginile .jpg.
     img_files = [file for file in os.listdir(d) if file.endswith('.jpg')]
     for file in img_files:
