@@ -252,7 +252,11 @@ def extern_main(name):
                         searchterm = "DELL_" + str(invoice) + "_" + str(order)
 
                 # Salvam textul extras din imagine in fisierul text 'str.txt'.
+                # Daca nu se gaseste nr. de Invoice, atunci numele va fi DELL si nr. de ordine al facturii.
                 if len(invoice_No) == 0:
+                    lstLine.append(rename)
+                # Daca nu se gaseste nr. de Order, atunci numele va fi DELL si nr. de ordine al facturii.
+                elif len(order_No) == 0:
                     lstLine.append(rename)
                 else:
                     lstLine.append(searchterm)
