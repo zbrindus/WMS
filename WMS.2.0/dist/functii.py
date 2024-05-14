@@ -192,7 +192,11 @@ def redenumire_main():
                             nume_aviz = nume_final + str(count) + ".pdf"
                             os.rename(path, nume_aviz)
                         else:
-                            os.rename(path, nume_final)
+                            if os.path.exists(nume_final):
+                                nume_duplicat = "COPY_NR-" + str(count) + "-" + nume_final
+                                os.rename(path, nume_duplicat)
+                            else:
+                                os.rename(path, nume_final)
                     except FileNotFoundError:
                         pass
                     # Ștergem fișierul temporar.
@@ -214,7 +218,7 @@ def extern_main(name):
         psm = r'--psm 6'
         invoice_no = r"Invoice No\s*(\d*)"
         order_no = r"Order No\s*(\d*)"
-    
+
     if name == "HP":
         box = (0, 0, 1900, 970)
         psm = r'--psm 6'
@@ -242,6 +246,7 @@ def extern_main(name):
             
             if name == "DELL":
                 Invoice = re.findall(invoice_no, str(text))
+                print(text)
                 Order = re.findall(order_no, str(text))
 
                 invoice_No = [invoice for invoice in Invoice]
@@ -267,8 +272,7 @@ def extern_main(name):
                 finalName.write(item + '.pdf\n')
             if name == "HP":
                 finalName.write('HP_' + docName[item][0] + '.pdf\n')
-    # Stergem fisierul _pdf_file.pdf. Daca nu il stergem acum, atunci va fi primul fisier pdf redenumit si ne da peste cap tot programul. 
-    # os.remove('_pdf_file.pdf')
+    
     # Redenumim fisierele.
     pdfCount = 0
     with open('numeFinal.txt') as finalName:
@@ -290,10 +294,7 @@ def extern_main(name):
     d = rootDir() + "\\dist"
     # Stergem fisierul numeFinal.txt.
     os.remove('numeFinal.txt')
-    # Stergem fisierul nume.txt.
-    # os.remove('nume.txt')
-    # Stergem fisierul str.txt.
-    # os.remove('str.txt')
+ 
     # Stergem imaginile .jpg.
     img_files = [file for file in os.listdir(d) if file.endswith('.jpg')]
     for file in img_files:
