@@ -14,7 +14,7 @@ import tempfile
 from natsort import natsorted
 from operator import itemgetter
 from pdf2image import convert_from_path, convert_from_bytes
-from PyPDF2 import PdfFileWriter, PdfReader, PdfFileMerger
+from PyPDF2 import PdfWriter, PdfReader, PdfFileMerger
 from PIL import ImageFilter
 from pyzbar.pyzbar import decode
 from time import sleep
@@ -95,14 +95,14 @@ def split_main():
 
     # Extragem paginile.
     for n in range(len(last_pages)):
-        writer = PdfFileWriter()
+        writer = PdfWriter()
         add_page = []
         page_nr = first_page[n]
         while page_nr <= last_pages[n]:
             add_page.append(page_nr)
             page_nr += 1
         for page_num in add_page:
-            writer.addPage(reader.pages[page_num])
+            writer.add_page(reader.pages[page_num])
             # Aici se scrie numele fișierului extras. Este indicat sa nu se modifice
             # mai bine se redenumește fișierul extras la urma.
             with open('{0}_page_0'.format(pdf_file_base) + str(page_nr) + '.pdf', 'wb') as f:
@@ -220,9 +220,9 @@ def extern_main(name):
         order_no = r"Order No\s*(\d*)"
 
     if name == "HP":
-        box = (0, 0, 1900, 970)
-        psm = r'--psm 6'
-        searchTerm = '90'
+        box = (700, 680, 1200, 720)
+        psm = r'--psm 3'
+        searchTo = 'Invoice number '
 
     count = 0
     lstLine = []
@@ -246,7 +246,6 @@ def extern_main(name):
             
             if name == "DELL":
                 Invoice = re.findall(invoice_no, str(text))
-                print(text)
                 Order = re.findall(order_no, str(text))
 
                 invoice_No = [invoice for invoice in Invoice]
@@ -266,12 +265,17 @@ def extern_main(name):
                 else:
                     lstLine.append(searchterm)
 
+            if name == "HP":
+                Invoice = [int(s) for s in text.split() if s.isdigit()]
+                lstLine.append(Invoice[0])
+
+
     with open('numeFinal.txt', 'w') as finalName:
         for nr, item in enumerate(lstLine):
             if name == "DELL":
                 finalName.write(item + '.pdf\n')
             if name == "HP":
-                finalName.write('HP_' + docName[item][0] + '.pdf\n')
+                finalName.write('HP_' + str(item) + '.pdf\n')
     
     # Redenumim fisierele.
     pdfCount = 0
@@ -316,8 +320,8 @@ def fiecare_pagina():
     number_of_pages = len(reader.pages)
     
     for page in range(number_of_pages):
-        write_pdf = PdfFileWriter()
-        write_pdf.addPage(reader.pages[page])
+        write_pdf = PdfWriter()
+        write_pdf.add_page(reader.pages[page])
         # Aici se scrie numele fișierului extras. Este indicat să nu se modifice mai bine se redenumește fișierul 
         # extras la urmă.
         with open(os.path.join(os.pardir, '0' + str(page + 1) + '.pdf'), 'wb') as f:
@@ -346,9 +350,9 @@ def seturi_de():
         pages = [num for num in range(int(name))]
         count = 0
         while count <= total_pages - int(name):
-            pdf_writer = PdfFileWriter()
+            pdf_writer = PdfWriter()
             for page_num in pages:
-                pdf_writer.addPage(read_pdf.pages[page_num])
+                pdf_writer.add_page(read_pdf.pages[page_num])
             # Aici se scrie numele fișierului extras. Este indicat să nu se modifice mai bine se redenumește fișierul 
             # extras la urmă.
             with open(os.path.join(os.pardir, '0' + str(pages[0] + 1) + '.pdf'), 'wb') as f:
@@ -380,8 +384,8 @@ def pagina_nr():
         page_list[i] = int(page_list[i])
     pages = [num - 1 for num in page_list]
     for page_num in pages:
-        pdf_writer = PdfFileWriter()
-        pdf_writer.addPage(read_pdf.pages[page_num])
+        pdf_writer = PdfWriter()
+        pdf_writer.add_page(read_pdf.pages[page_num])
         # Aici se scrie numele fișierului extras. Este indicat să nu se modifice mai bine se redenumește fișierul 
         # extras la urmă.
         with open(os.path.join(os.pardir, '0' + str(page_num + 1) + '.pdf'), 'wb') as f:
@@ -397,7 +401,7 @@ def interval_de():
         if file.endswith('.pdf'):
             pdf_file = rootDir() + '\\' + file
     pdf_file_base = pdf_file.replace('.pdf', '')
-    write_pdf = PdfFileWriter()
+    write_pdf = PdfWriter()
     read_pdf = PdfReader(pdf_file)
     # Cate pagini are documentul.
     total_pages = len(read_pdf.pages)
@@ -412,7 +416,7 @@ def interval_de():
         pages.append(page_num)
         page_num += 1
     for page_num in pages:
-        write_pdf.addPage(read_pdf.pages[page_num])
+        write_pdf.add_page(read_pdf.pages[page_num])
         # Aici se scrie numele fișierului extras. Este indicat sa nu se modifice mai bine se redenumește fișierul 
         # extras la urma.
         with open(os.path.join(os.pardir, '0' + str(page_list[0]) + '.pdf'), 'wb') as f:
@@ -447,9 +451,9 @@ def seturi_de_la_pana_la():
     pages = [num + (first_page - 1) for num in range(set_of)]
     count = 0
     while count <= total_pages - set_of:
-        pdf_writer = PdfFileWriter()
+        pdf_writer = PdfWriter()
         for page_num in pages:
-            pdf_writer.addPage(read_pdf.pages[page_num])
+            pdf_writer.add_page(read_pdf.pages[page_num])
         # Aici se scrie numele fișierului extras. Este indicat să nu se modifice mai bine se redenumește fișierul
         # extras la urmă.
         with open(os.path.join(os.pardir, '0' + str(pages[0] + 1) + '.pdf'), 'wb') as f:
