@@ -1,0 +1,111 @@
+{
+  "ALEF DISTRIBUTION": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "ALEF_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "ASBIS ROMANIA": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "ASBIS_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "AXEL SOFT IT GROUP": [
+    {
+      "Line": "Nr factura ",
+      "Split": "AXL ",
+      "Docnumber": "[0][1]",
+      "Docname": "AXELSOFT_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "BIONET SOFTWARE": [
+    {
+      "Line": "Nr factura ",
+      "Split": "nr. ",
+      "Docnumber": "[0][1]",
+      "Docname": "BIONET_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "DANTE INTERNATIONAL": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "DANTE_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "ELKOTECH ROMANIA": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ELKR",
+      "Docnumber": "[0][1]",
+      "Docname": "ELKOTECH_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+  "MB DISTRIBUTION": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "MBD_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+  "NETWORK ONE DISTRIBUTION": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "NOD_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+  "ORACLE": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "ORACLE_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+  "RTC PROFFICE EXPERIENCE": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura RTCF",
+      "Docnumber": "[0][1]",
+      "Docname": "RTC_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+  "SAMSUNG": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "SAMSUNG_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "24 EVONESS": [
+    {
+      "Line": "Numar",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "24EVONESS_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ABN SYSTEMS INTERNATIONAL": [
+    {
+      "Line": "Serie si Numar",
+      "Split": "ABN ",
+      "Docnumber": "[0][1]",
+      "Docname": "ABN_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ACTIV INVEST": [
+    {
+      "Line": "Numar ",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "ACTIVINVEST_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ADVANTECH": [
+    {
+      "Line": "Invoice No",
+      "Split": "No ",
+      "Docnumber": "[0][1]",
+      "Docname": "ADVANTECH_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "AGIS": [
+    {
+      "Line": "L",
+      "Split": "L",
+      "Docnumber": "[0][1]",
+      "Docname": "AGIS_",
+      "Cropbox": "(750, 220, 1100, 300)"
+    }
+  ],
+
+  "AGRESSIONE": [
+    {
+      "Line": "NR",
+      "Split": "NR AGR ",
+      "Docnumber": "[0][1]",
+      "Docname": "AGRESSIONE_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ALEF": [
+    {
+      "Line": "Seria",
+      "Split": "Nr",
+      "Docnumber": "[0][1]",
+      "Docname": "ALEF_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ALIANT": [
+    {
+      "Line": "Seria",
+      "Split": "ANT ",
+      "Docnumber": "[0][1]",
+      "Docname": "ALIANT_",
+      "Cropbox": "(1000, 0, 1800, 300)"
+    }
+  ],
+
+  "ALLIS": [
+    {
+      "Line": "Nr facturii",
+      "Split": "facturii ",
+      "Docnumber": "[0][1]",
+      "Docname": "ALLIS_",
+      "Cropbox": "(350, 350, 1100, 620)"
+    }
+  ],
+
+  "ALSO TECHNOLOGY": [
+    {
+      "Line": "Numar",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "ALSO_",
+      "Cropbox": "(50, 100, 1050, 900)"
+    }
+  ],
+
+  "APCOM IT DISTRIBUTION": [
+    {
+      "Line": "Timisoara",
+      "Split": "Timisoara ",
+      "Docnumber": "[0][1]",
+      "Docname": "APCOM_",
+      "Cropbox": "(1050, 650, 1700, 900)"
+    }
+  ],
+
+  "APCOM IT DISTRIBUTION": [
+    {
+      "Line": "Ghiroda",
+      "Split": "Ghiroda ",
+      "Docnumber": "[0][1]",
+      "Docname": "APCOM_",
+      "Cropbox": "(1050, 650, 1700, 900)"
+    }
+  ],
+
+  "ASBIS": [
+    {
+      "Line": "ASB ",
+      "Split": "ASB ",
+      "Docnumber": "[0][1]",
+      "Docname": "ASBIS_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ASUS HOLLAND": [
+    {
+      "Line": "INVOICE NO",
+      "Split": "NO ",
+      "Docnumber": "[0][1]",
+      "Docname": "ASUS_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "AXEL SOFT IT": [
+    {
+      "Line": "Numar",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "AXELSOFT_",
+      "Cropbox": "(550, 50, 1800, 270)"
+    }
+  ],
+
+  "B2B EXPERT MOBILE": [
+    {
+      "Line": "Nr facturii",
+      "Split": "facturii ",
+      "Docnumber": "[0][1]",
+      "Docname": "B2BEXPERT_",
+      "Cropbox": "(650, 250, 1100, 550)"
+    }
+  ],
+
+  "BGA IT SOLUTIONS": [
+    {
+      "Line": "FACTURA",
+      "Split": "BGAF ",
+      "Docnumber": "[0][1]",
+      "Docname": "BGAIT_",
+      "Cropbox": "(1100, 300, 1600, 400)"
+    }
+  ],
+
+  "CLICO SOLUTIONS": [
+    {
+      "Line": "Serie",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "CLICO_",
+      "Cropbox": "(0, 50, 1900, 970)"
+    }
+  ],
+
+  "CRAYON": [
+    {
+      "Line": "490",
+      "Split": "\n",
+      "Docnumber": "[0][0]",
+      "Docname": "CRAYON_",
+      "Cropbox": "(1350, 300, 1700, 380)"
+    }
+  ],
+
+  "DANTE INTERNATIONAL": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "DANTE_",
+      "Cropbox": "(500, 100, 1500, 350)"
+    }
+  ],
+
+  "DACRIS IMPEX": [
+    {
+      "Line": "factura",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "DACRIS_",
+      "Cropbox": "(450, 500, 900, 700)"
+    }
+  ],
+
+  "DESPEC INTERNATIONAL": [
+    {
+      "Line": "factura DES",
+      "Split": "DES",
+      "Docnumber": "[0][1]",
+      "Docname": "DESPEC_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "CUSTOMER NO 21526": [
+    {
+      "Line": "Invoice No",
+      "Split": "VK24RG",
+      "Docnumber": "[0][1]",
+      "Docname": "EAF_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "EET INTERNATIONAL": [
+    {
+      "Line": "Invoice No",
+      "Split": "No ",
+      "Docnumber": "[0][1]",
+      "Docname": "EET_",
+      "Cropbox": "(1000, 550, 1700, 650)"
+    }
+  ],
+
+  "DK35239480": [
+    {
+      "Line": "Invoice No",
+      "Split": "No ",
+      "Docnumber": "[0][1]",
+      "Docname": "EET_",
+      "Cropbox": "(1000, 550, 1700, 650)"
+    }
+  ],
+
+  "ELKOTECH ROMANIA": [
+    {
+      "Line": "LKR",
+      "Split": "LKR",
+      "Docnumber": "[0][1]",
+      "Docname": "ELKOTECH_",
+      "Cropbox": "(50, 100, 1050, 900)"
+    }
+  ],
+
+  "EMPORIS NETWORKS": [
+    {
+      "Line": "Seria",
+      "Split": "nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "EMPORIS_",
+      "Cropbox": "(50, 50, 1100, 250)"
+    }
+  ],
+
+  "EPOKA AS": [
+    {
+      "Line": "Invoice",
+      "Split": "INV",
+      "Docnumber": "[0][1]",
+      "Docname": "EPOKA_INV-",
+      "Cropbox": "(0, 50, 1900, 970)"
+    }
+  ],
+
+  "F 64 STUDIO": [
+    {
+      "Line": "Nr",
+      "Split": "facturii ",
+      "Docnumber": "[0][1]",
+      "Docname": "F64STUDIO_",
+      "Cropbox": "(650, 350, 1200, 600)"
+    }
+  ],
+
+  "FANPLACE IT": [
+    {
+      "Line": "Serie",
+      "Split": "FAN",
+      "Docnumber": "[0][1]",
+      "Docname": "FANPLACEIT_",
+      "Cropbox": "(1000, 0, 1700, 300)"
+    }
+  ],
+
+  "FLEXTRONICS GLOBAL SERVICES": [
+    {
+      "Line": "InvoiceNr",
+      "Split": "SNL",
+      "Docnumber": "[0][1]",
+      "Docname": "FLEXTRONICS_",
+      "Cropbox": "(0, 650, 600, 1000)"
+    }
+  ],
+
+  "GERSIM IMPEX": [
+    {
+      "Line": "Numarul",
+      "Split": "Numarul ",
+      "Docnumber": "[0][1]",
+      "Docname": "GERSIM_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "GERSIMIMPEX": [
+    {
+      "Line": "Numarul",
+      "Split": "Numarul ",
+      "Docnumber": "[0][1]",
+      "Docname": "GERSIM_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "IMPACT ADVERTISING": [
+    {
+      "Line": "CON",
+      "Split": "CON",
+      "Docnumber": "[0][1]",
+      "Docname": "IMPACT_",
+      "Cropbox": "(0, 0, 1700, 470)"
+    }
+  ],
+
+  "ILCO NETWORKS": [
+    {
+      "Line": "FACTURA ",
+      "Split": "ILKNB",
+      "Docnumber": "[0][1]",
+      "Docname": "ILCO_",
+      "Cropbox": "(0, 0, 1900, 970)"
+    }
+  ],
+
+  "RO30798746": [
+    {
+      "Line": "Serie si Numar",
+      "Split": "FF24",
+      "Docnumber": "[0][1]",
+      "Docname": "INGRAM_24-",
+      "Cropbox": "(200, 50, 700, 400)"
+    }
+  ],
+
+  "INFINIGATE": [
+    {
+      "Line": "NSS",
+      "Split": "NSS ",
+      "Docnumber": "[0][1]",
+      "Docname": "INFINIGATE_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "BRIGHT SOLUTIONS": [
+    {
+      "Line": "Num",
+      "Split": "EIBS",
+      "Docnumber": "[0][1]",
+      "Docname": "ITBRIGHT_",
+      "Cropbox": "(1000, 550, 1800, 770)"
+    }
+  ],
+
+  "IT DIRECT": [
+    {
+      "Line": "Seria",
+      "Split": "nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "ITDIRECT_",
+      "Cropbox": "(1000, 0, 1700, 300)"
+    }
+  ],
+
+  "IT GENETICS": [
+    {
+      "Line": "Document",
+      "Split": "WEBF ",
+      "Docnumber": "[0][1]",
+      "Docname": "ITGENETICS_",
+      "Cropbox": "(600, 200, 1000, 370)"
+    }
+  ],
+
+  "LAPTOP AID": [
+    {
+      "Line": "LAID",
+      "Split": "LAID10",
+      "Docnumber": "[0][1]",
+      "Docname": "LAPTOPAID_",
+      "Cropbox": "(900, 550, 1800, 770)"
+    }
+  ],
+
+    "LASTING": [
+    {
+      "Line": "factur",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "LASTING_",
+      "Cropbox": "(650, 200, 1150, 550)"
+    }
+  ],
+
+  "LENOVO": [
+    {
+      "Line": "Invoice No",
+      "Split": "No ",
+      "Docnumber": "[0][1]",
+      "Docname": "LENOVO_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "LEXMEDIA": [
+    {
+      "Line": "SeriaNr",
+      "Split": " LMCFFOL ",
+      "Docnumber": "[0][1]",
+      "Docname": "LEXMEDIA_",
+      "Cropbox": "(1000, 0, 1500, 300)"
+    }
+  ],
+
+  "LOGICOM": [
+    {
+      "Line": "INV",
+      "Split": "INV",
+      "Docnumber": "[0][1]",
+      "Docname": "LOGICOM_",
+      "Cropbox": "(600, 300, 1150, 570)"
+    }
+  ],
+
+  "MB DISTRIBUTION": [
+    {
+      "Line": "Numarul facturii",
+      "Split": "facturii ",
+      "Docnumber": "[0][1]",
+      "Docname": "MBD_",
+      "Cropbox": "(50, 450, 600, 600)"
+    }
+  ],
+
+  "MIKRO ATLAS": [
+    {
+      "Line": "intern",
+      "Split": "intern ",
+      "Docnumber": "[0][1]",
+      "Docname": "MIKROATLAS_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "MOBIPARTS": [
+    {
+      "Line": "MOB",
+      "Split": "MOB ",
+      "Docnumber": "[0][1]",
+      "Docname": "MOBIPARTS_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "NOD": [
+    {
+      "Line": "900",
+      "Split": " ",
+      "DocNumber": "[0][1]",
+      "Docname": "NOD_",
+      "Cropbox": "(1000, 0, 1600, 350)"
+    }
+  ],
+
+  "NOI OAMENI": [
+    {
+      "Line": "OMNCLC",
+      "Split": "nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "NOIOAMENII_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "NORDIC": [
+    {
+      "Line": "Sales Invoice",
+      "Split": "Invoice ",
+      "Docnumber": "[0][1]",
+      "Docname": "NORDIC_",
+      "Cropbox": "(1100, 300, 1600, 500)"
+    }
+  ],
+
+  "4014420008": [
+    {
+      "Line": "Number",
+      "Split": "INV",
+      "Docnumber": "[0][1]",
+      "Docname": "NUVIAS_",
+      "Cropbox": "(700, 400, 1500, 600)"
+    }
+  ],
+
+    "OMNIENT": [
+    {
+      "Line": "Numar",
+      "Split": "Numar ",
+      "Docnumber": "[0][1]",
+      "Docname": "OMNIENT_",
+      "Cropbox": "(650, 50, 1100, 420)"
+    }
+  ],
+
+  "ORACLE": [
+    {
+      "Line": "Nr factura ",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "ORACLE_",
+      "Cropbox": "(500, 100, 1500, 300)"
+    }
+  ],
+
+    "PROMELEK": [
+    {
+      "Line": "FACTURA",
+      "Split": "NR ",
+      "Docnumber": "[0][1]",
+      "Docname": "PROMELEK_",
+      "Cropbox": "(0, 0, 1700, 470)"
+    }
+  ],
+
+  "ROMSYM DATA": [
+    {
+      "Line": "RSD",
+      "Split": "Nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "ROMSYMDATA_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "ROMSYSTEMS": [
+    {
+      "Line": "Factur",
+      "Split": "F2222",
+      "Docnumber": "[0][1]",
+      "Docname": "ROMSYSTEMS_",
+      "Cropbox": "(0, 650, 900, 1070)"
+    }
+  ],
+
+  "ROTELECONNECT": [
+    {
+      "Line": "factura",
+      "Split": "factura ",
+      "Docnumber": "[1][1]",
+      "Docname": "ROTELECONNECT_",
+      "Cropbox": "(600, 100, 1100, 470)"
+    }
+  ],
+
+  "ROYAL COMPUTERS": [
+    {
+      "Line": "Royal",
+      "Split": "Royal ",
+      "Docnumber": "[0][1]",
+      "Docname": "ROYAL_",
+      "Cropbox": "(1000, 0, 1700, 300)"
+    }
+  ],
+
+  "ROYALCOMPUTERSSRL": [
+    {
+      "Line": "Royal",
+      "Split": "Royal ",
+      "Docnumber": "[0][1]",
+      "Docname": "ROYAL_",
+      "Cropbox": "(1000, 0, 1700, 300)"
+    }
+  ],
+
+  "RTC PROFFICE": [
+    {
+      "Line": "RTCF",
+      "Split": "RTCF",
+      "Docnumber": "[0][1]",
+      "Docname": "RTCPROFFICE_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "SAMA CONSUL": [
+    {
+      "Line": "MDCFF",
+      "Split": "MDCFF1",
+      "Docnumber": "[0][1]",
+      "Docname": "SAMACONSUL_",
+      "Cropbox": "(0, 50, 1800, 770)"
+    }
+  ],
+
+  "SCHRACK TECHNIK": [
+    {
+        "Line": "Numar factura",
+        "Split": "factura ",
+        "Docnumber": "[0][1]",
+        "Docname": "SCHRACK_",
+        "Cropbox": "(0, 0, 1900, 970)"
+    }
+  ],
+
+  "SECPRAL": [
+    {
+      "Line": "factura",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "SECPRAL_",
+      "Cropbox": "(300, 600, 1000, 900)"
+    }
+  ],
+
+  "SOLITON": [
+    {
+      "Line": "SOL",
+      "Split": "SOL ",
+      "Docnumber": "[0][1]",
+      "Docname": "SOLITON_",
+      "Cropbox": "(1000, 0, 1700, 100)"
+    }
+  ],
+
+  "TEAM TELECOM": [
+    {
+      "Line": "TEAM",
+      "Split": "TEAM",
+      "Docnumber": "[0][1]",
+      "Docname": "TEAMTELECOM_",
+      "Cropbox": "(800, 50, 1800, 370)"
+    }
+  ],
+
+  "THOMANN": [
+    {
+      "Line": "Invoice Nr",
+      "Split": "Nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "THOMANN_",
+      "Cropbox": "(100, 650, 700, 800)"
+    }
+  ],
+
+  "TOP EDGE": [
+    {
+      "Line": "TEE",
+      "Split": "Nr ",
+      "Docnumber": "[0][1]",
+      "Docname": "TOPEDGE_",
+      "Cropbox": "(600, 300, 1200, 550)"
+    }
+  ],
+
+  "TRYAMM TRADING CONSULTING": [
+    {
+      "Line": "factura",
+      "Split": "TRY ",
+      "Docnumber": "[0][1]",
+      "Docname": "TRYAMM_",
+      "Cropbox": "(200, 650, 800, 900)"
+    }
+  ],
+
+    "RO25222010": [
+    {
+      "Line": "Seria",
+      "Split": "factura ",
+      "Docnumber": "[0][1]",
+      "Docname": "TME_",
+      "Cropbox": "(0, 850, 800, 970)"
+    }
+  ],
+
+  "9046534": [
+    {
+      "Line": "9046534",
+      "Split": "9046534 ",
+      "Docnumber": "[0][1]",
+      "Docname": "TDSYNNEX_",
+      "Cropbox": "(800, 100, 1700, 400)"
+    }
+  ],
+
+  "VITACOM ELECTRONICS": [
+    {
+      "Line": "FCA",
+      "Split": "FCA",
+      "Docnumber": "[0][1]",
+      "Docname": "VITACOM_",
+      "Cropbox": "(0, 50, 1800, 970)"
+    }
+  ],
+
+  "WISE COMPUTER": [
+    {
+      "Line": "FACTURA",
+      "Split": "WIS ",
+      "Docnumber": "[0][1]",
+      "Docname": "WISECOMPUTER_",
+      "Cropbox": "(100, 0, 750, 300)"
+    }
+  ]
+}
