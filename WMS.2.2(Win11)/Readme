@@ -1,0 +1,12 @@
+Este varianta pentru Windows 11 cu shlex in loc de re la liniile unde am dat configuratia la tesseract.
+Se pare ca pe unele modele de Win 11 nu merge cu re, da o eroare ca nu ar fi inchis o paranteza sau un string, dar nu este asa.
+Astfel am folosit aceasta varianta cu shlex, si se pare ca asa merge. 
+
+De asemenea, la scanarea facturilor de DELL, nu citea cifrele de la Invoice No si Order No, aici a trebuit sa adaug un " :\s* " la termenul de cautare.
+In celelalte variante este 
+  " invoice_no = r'Invoice No\s*(\d*)' "
+respectiv
+  " order_no = r'Order No\s*(\d*)' "
+dar aici este 
+  r'Invoice No\s*:\s*(\d*)'
+sau Order No.
